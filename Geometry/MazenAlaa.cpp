@@ -126,12 +126,6 @@ bool intersect(Line l1, Line l2, point& out_intersection) {
     return true;
 }
 
-// Check which side of a line a point is on 
-// Returns > 0 for one side, < 0 for the other, 0 if it's perfectly on the line
-T evaluateSide(point p, Line l) {
-    return l.a * p.X + l.b * p.Y + l.c;
-}
-
 // Area of any simple polygon using Shoelace Formula 
 T polygonArea(const vector<point>& vertices) {
     T area = 0;
@@ -162,58 +156,55 @@ T circumcircleRadius(point p1, point p2, point p3) {
     
     return (a * b * c) / (4.0 * area);
 } 
-
-vector<point> intersectCircles(point c1, T r1, point c2, T r2) {
-    T d = abs(c2 - c1);
+int pointInPolygon(vector<point>polygon,point p){
+    int n = polygon.size();
     
-    // Case 1: Circles are too far apart, or one is strictly inside the other
-    if (d > r1 + r2 + EPS || d < abs(r1 - r2) - EPS || d < EPS) {
-        return {}; // No intersection
-    }
-    
-    // Case 2: They intersect or are tangent
-    // Using Law of Cosines to find the angle from c1: r2^2 = r1^2 + d^2 - 2*r1*d*cos(a)
-    T cos_a = (r1 * r1 + d * d - r2 * r2) / (2.0 * r1 * d);
-    cos_a = clamp(cos_a); // Ensure value is between [-1, 1] before acos
-    T angle = acos(cos_a);
-    
-    // Create a vector from c1 pointing exactly to c2, then scale its length to r1
-    point v = (c2 - c1) / d * r1;
-    
-    point p1 = c1 + v * polar((T)1.0, angle);
-    point p2 = c1 + v * polar((T)1.0, -angle);
-    
-    if (abs(p1 - p2) < EPS) 
-        return {p1}; 
-
-    return {p1, p2}; 
+    for(int i=0;i<n;i++){
+            if( (orientation(polygon[i],polygon[(i+1)%n],p) == 0) && onSegment(polygon[i],polygon[(i+1)%n],p))
+            {
+                //"BOUNDARY\n";
+                return 1;
+            }
+        }
+ 
+        bool inside = false;
+        for(int i=0;i<n;i++){
+            point a = polygon[i],b = polygon[(i+1)%n];
+            if(a.Y > b.Y)
+                swap(a,b);
+            if( p.Y >= a.Y && p.Y < b.Y )
+            {
+                if(orientation(a,b,p) == 1){
+                    inside = !inside;
+                }
+            }
+        
+        }
+       // cout << (inside? "INSIDE\n":"OUTSIDE\n");
+        if(inside)
+            return 2;
+        return 0;
 }
-// Returns the center of the circle passing through 3 non-collinear points (Circumcenter)
-point circumcenter(point a, point b, point c) {
-    point ab = b - a; // Vector from A to B
-    point ac = c - a; // Vector from A to C
+
+// line xy , ab
+bool lineSegmentsIntersect(point a,point b,point x,point y){
+    long long r1 = orientation(a,b,x);
+    long long r2 = orientation(a,b,y);
+    long long r3 = orientation(x,y,a);
+    long long r4 = orientation(x,y,b);
     
-    // Calculate the determinant (which is 2 * cross product)
-    T D = 2.0 * cross(ab, ac);
-    
-    // If D is 0, it means the 3 points are collinear (on the same line),
-    // so a circle cannot be drawn through them.
-    if (abs(D) < EPS) {
-        return point(1e18, 1e18); // Return a dummy/infinity point as an error flag
+    if(r1*r2 < 0 && r3*r4 < 0)
+        return 1;
+    else if( (r1 == 0 && onSegment(a,b,x)) || 
+        (r2 == 0 && onSegment(a,b,y)) ||
+        (r3 == 0 && onSegment(x,y,a)) ||
+        (r4 == 0 && onSegment(x,y,b))
+        ){
+            return 1;
     }
-    
-    // In <complex>, std::norm(v) returns the SQUARED magnitude (x^2 + y^2)
-    // Don't confuse it with abs() which returns the actual distance.
-    T ab_sq = norm(ab); 
-    T ac_sq = norm(ac);
-    
-    // Apply Cramer's rule to find the center relative to 'a'
-    T cx = (ac.Y * ab_sq - ab.Y * ac_sq) / D;
-    T cy = (ab.X * ac_sq - ac.X * ab_sq) / D;
-    
-    // Add 'a' back to shift the center to its true absolute position
-    return a + point(cx, cy);
+    return 0;
 }
+
 int main()
 {
 
