@@ -42,6 +42,19 @@ T toRad(T deg) {
 point rotate(point p, point pivot, T angle) {
     return (p - pivot) * polar((T)1.0, angle) + pivot;
 }
+/*
+
+// Rotation CCW (use negative angle for CW)
+point rotate(point p, point pivot,int ang) {
+    p = (p - pivot);
+    if(ang == 90)
+        p = point(-p.Y,p.X);
+    else if(ang == -90) {
+        p = point(p.Y,-p.X);
+    }
+     return p + pivot;
+}
+*/
 point readPoint(){
     int x,y;
     cin>>x>>y;
@@ -77,6 +90,8 @@ int orientation (point a,point b,point c){
 //double cross(Point a, Point b) { return a.x * b.y - a.y * b.x; }
 //double magnitude(Point a) { return hypot(a.x, a.y); }
 //double dist(Point a, Point b) { return hypot(a.x - b.x, a.y - b.y); }
+// summation of angles for regular n-Gon
+// In degrees: (n - 2) × 180°
 
 // ==========================================
 // 2. LINE STRUCT (Ax + By + C = 0)
@@ -156,6 +171,61 @@ T circumcircleRadius(point p1, point p2, point p3) {
     
     return (a * b * c) / (4.0 * area);
 } 
+
+vector<point> intersectCircles(point c1, T r1, point c2, T r2) {
+    T d = abs(c2 - c1);
+    
+    // Case 1: Circles are too far apart, or one is strictly inside the other
+    if (d > r1 + r2 + EPS || d < abs(r1 - r2) - EPS || d < EPS) {
+        return {}; // No intersection
+    }
+    
+    // Case 2: They intersect or are tangent
+    // Using Law of Cosines to find the angle from c1: r2^2 = r1^2 + d^2 - 2*r1*d*cos(a)
+    T cos_a = (r1 * r1 + d * d - r2 * r2) / (2.0 * r1 * d);
+    cos_a = clamp(cos_a); // Ensure value is between [-1, 1] before acos
+    T angle = acos(cos_a);
+    
+    // Create a vector from c1 pointing exactly to c2, then scale its length to r1
+    point v = (c2 - c1) / d * r1;
+    
+    point p1 = c1 + v * polar((T)1.0, angle);
+    point p2 = c1 + v * polar((T)1.0, -angle);
+    
+    if (abs(p1 - p2) < EPS) 
+        return {p1}; 
+
+    return {p1, p2}; 
+}
+
+//not tested
+// Returns the center of the circle passing through 3 non-collinear points (Circumcenter)
+point circumcenter(point a, point b, point c) {
+    point ab = b - a; // Vector from A to B
+    point ac = c - a; // Vector from A to C
+    
+    // Calculate the determinant (which is 2 * cross product)
+    T D = 2.0 * cross(ab, ac);
+    
+    // If D is 0, it means the 3 points are collinear (on the same line),
+    // so a circle cannot be drawn through them.
+    if (abs(D) < EPS) {
+        return point(1e18, 1e18); // Return a dummy/infinity point as an error flag
+    }
+    
+    // In <complex>, std::norm(v) returns the SQUARED magnitude (x^2 + y^2)
+    // Don't confuse it with abs() which returns the actual distance.
+    T ab_sq = norm(ab); 
+    T ac_sq = norm(ac);
+    
+    // Apply Cramer's rule to find the center relative to 'a'
+    T cx = (ac.Y * ab_sq - ab.Y * ac_sq) / D;
+    T cy = (ab.X * ac_sq - ac.X * ab_sq) / D;
+    
+    // Add 'a' back to shift the center to its true absolute position
+    return a + point(cx, cy);
+}
+
 int pointInPolygon(vector<point>polygon,point p){
     int n = polygon.size();
     
@@ -205,10 +275,33 @@ bool lineSegmentsIntersect(point a,point b,point x,point y){
     return 0;
 }
 
+
+// check if the all angles are 90 in quad
+bool four90(vector<point> v){
+    for(int i=0;i<4;i++)
+        if(dot(v[(i+1)%4]-v[i],v[(i+2)%4]-v[(i+1)%4]) != 0)
+            return false;
+    
+    return true;
+
+}
+
 int main()
 {
 
    ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     
+    function<bool(point,point,point,point)> formSquare = [](point a,point b,point c,point d) -> bool{
+        vector<T>dis;
+        dis.push_back(norm(a-b));
+        dis.push_back(norm(a-c));
+        dis.push_back(norm(a-d));
+        dis.push_back(norm(d-b));
+        dis.push_back(norm(d-c));
+        dis.push_back(norm(b-c));
+        sort(dis.begin(),dis.end());
+        return dis[0] == dis[1] && dis[1] == dis[2] && dis[2] == dis[3] && dis[4] == dis[5] && dis[0] > EPS;
+    };
+
     return 0;
 }
