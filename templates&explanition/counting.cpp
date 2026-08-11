@@ -2,7 +2,7 @@
 using namespace std;
 
 using ll = long long;
-const ll mod = 1e9 + 7;
+const ll MOD = 1e9 + 7;
 const int MAXN = 1e6 + 5;   // adjust as needed
 
 ll fact[MAXN], invfact[MAXN];
@@ -11,7 +11,7 @@ ll fact[MAXN], invfact[MAXN];
 // 🔹 Fast Power (a^b % MOD)
 ll fastPow(ll a, ll b) {
     ll res = 1;
-    a %= mod;
+    a %= MOD;
     while (b) {
         if (b & 1) res = res * a % MOD;
         a = a * a % MOD;

@@ -199,4 +199,49 @@ Then choose.
 * If constraints are large → think **math, not brute force**
 * If stuck → try **complement** or **fix one element**
 
-![alt text]({1D91104C-1872-4A6A-B0E3-2ECF8D31DB03}.png)
+
+
+Assuming the sticks are identical and the boxes are distinct, this is a classic combinatorics problem solved using the **Stars and Bars** method.
+
+Here are the formulas and the reasoning for both scenarios.
+
+## 1. Each box must have at least 1 stick
+
+If every box needs at least one stick, you are looking for the number of positive integer solutions to the equation:
+$x_1 + x_2 + \dots + x_F = N$ (where $x_i \ge 1$)
+
+**The Formula:**
+
+
+$$\binom{N-1}{F-1}$$
+
+**Why it works:**
+Imagine lining up all $N$ sticks in a row. There are $N - 1$ gaps between these sticks. To divide the sticks into $F$ groups (boxes), you need to place $F - 1$ dividers (bars) into those gaps. Because you can only place one divider per gap, no box can be empty.
+
+*(Note: If $N < F$, the answer is **0** because you don't have enough sticks to put one in each box.)*
+
+---
+
+## 2. Each box must have at least K sticks
+
+This is a generalization of the problem where each box must contain a minimum of $K$ sticks ($x_i \ge K$, where $K \ge 0$).
+
+**The Formula:**
+
+
+$$\binom{N - F \times K + F - 1}{F - 1}$$
+
+**Why it works:**
+
+1. **Fulfill the minimum requirement first:** Place $K$ sticks into each of the $F$ boxes. You have now used up $F \times K$ sticks.
+2. **Find the remaining sticks:** You have $N' = N - (F \times K)$ sticks left to distribute.
+3. **Distribute the rest with no restrictions:** Now you just need to distribute the remaining $N'$ sticks into the $F$ boxes, where boxes are allowed to receive **0** of the remaining sticks.
+4. The standard Stars and Bars formula for non-negative integers (allowing empty boxes) is choosing $F-1$ dividers among $N'$ sticks and $F-1$ dividers total: $\binom{N' + F - 1}{F - 1}$. Substituting $N'$ gives the final formula.
+
+*(Note: If $N < F \times K$, the answer is **0** because you cannot even fulfill the base requirement.)*
+
+**Special Case ($K = 0$):**
+If you want to know the combinations where boxes can be completely empty (at least 0 sticks), substituting $K = 0$ into the formula gives you the standard equation for non-negative integer solutions:
+
+
+$$\binom{N + F - 1}{F - 1}$$
