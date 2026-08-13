@@ -1,1 +1,0 @@
-{"name":"Local: b","url":"c:\\ProblemSolving\\templates&explanition\\b.cpp","tests":[{"id":1770821948493,"input":"4\n5\n1 1 2 100 4\n6\n2 2 1 1 2 2\n10\n1 1 2 3 4 1 1 7 3 9\n2\n1000000000 1000000000","output":"3\n7\n10\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\ProblemSolving\\templates&explanition\\b.cpp","group":"local","local":true}
