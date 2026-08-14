@@ -116,3 +116,49 @@ bool canRepresent(int l, ll x)
     }
     return true;
 }
+
+// Xor Basis with Bitset
+
+constexpr int B = 1504;
+ 
+using big = bitset<B + 1>;
+big basis[B + 1];
+int ids[B + 1];
+big msk[B + 1];
+const big one = 1;
+bool insert(big x, int id)
+{
+    big mask = 0;
+    for (int i = B; i >= 0; i--)
+    {
+        if (!x[i])
+            continue;
+        if (basis[i] == 0)
+        {
+            basis[i] = x;
+            ids[i] = id;
+            msk[i] = mask ^ (one << i);
+            return true;
+        }
+        mask ^= msk[i];
+        x ^= basis[i];
+    }
+    return false;
+}
+int n, k;
+vector<int> can(big x)
+{
+    big mask = 0;
+    for (int i = B; i >= 0; i--)
+    {
+        if (x[i] and basis[i] != 0)
+            x ^= basis[i], mask ^= msk[i];
+    }
+    if (x != 0 or mask.count() == n)
+        return {-1};
+    vector<int> ret;
+    for (int i = B; i >= 0; i--)
+        if (mask[i])
+            ret.push_back(ids[i]);
+    return ret;
+}
