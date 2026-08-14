@@ -1,0 +1,561 @@
+%% CP Reference -- 2 Sa3yda w 1 Menofy
+%% Compile: lualatex reference.tex
+%% Style: 2-column portrait A4, matching the ICPC-style reference PDF
+
+\documentclass[10pt,a4paper]{extarticle}
+
+%% ---- Packages ----------------------------------------------------------------
+\usepackage[left=0.4in,right=0.4in,top=0.7in,bottom=0.4in,columnsep=0.5cm]{geometry}
+\usepackage{pdflscape}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{rotating}
+\usepackage{tocloft}
+\usepackage{fontspec}
+\usepackage{eso-pic}
+\usepackage{graphicx}
+
+%% ---- Fonts ------------------------------------------------------------------
+\setmonofont{DejaVu Sans Mono}[Scale=0.85]
+\setsansfont{DejaVu Sans}[Scale=0.95]
+
+%% ---- Colors -----------------------------------------------------------------
+\definecolor{cKeyword}{RGB}{0,128,0}
+\definecolor{cComment}{RGB}{160,60,0}
+\definecolor{cString}{RGB}{160,40,0}
+\definecolor{cLinenum}{RGB}{160,160,160}
+\definecolor{cPreproc}{RGB}{0,128,0}
+
+%% ---- Code Listings ----------------------------------------------------------
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\fontsize{7.5pt}{9pt}\selectfont,
+  keywordstyle=\color{cKeyword}\bfseries,
+  commentstyle=\color{cComment},
+  stringstyle=\color{cString},
+  numberstyle=\color{cLinenum}\fontsize{6pt}{7.5pt}\selectfont,
+  backgroundcolor={},
+  frame=none,
+  breaklines=true,
+  breakatwhitespace=false,
+  tabsize=2,
+  showstringspaces=false,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  stepnumber=1,
+  xleftmargin=16pt,
+  xrightmargin=0pt,
+  aboveskip=2pt,
+  belowskip=3pt,
+  extendedchars=true,
+  morekeywords={ll,ull,lll,vi,vvi,pii,pll,F,S,all,pb,mp,INF,MOD,N,LG},
+  morecomment=[l][\color{cPreproc}]{\#},
+}
+
+%% ---- Section Formatting -----------------------------------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+
+\titleformat{\section}
+  {\sffamily\large\bfseries}
+  {\thesection}
+  {0.5em}
+  {}
+  [\vspace{-4pt}\rule{\columnwidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\titleformat{\subsection}
+  {\sffamily\normalsize\bfseries}
+  {\thesubsection}
+  {0.5em}
+  {}
+  [\vspace{-4pt}\rule{\columnwidth}{0.3pt}]
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+
+\titleformat{\subsubsection}
+  {\sffamily\small\bfseries}
+  {}
+  {0em}
+  {}
+\titlespacing*{\subsubsection}{0pt}{2pt}{0pt}
+
+%% ---- Page Style -------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\footnotesize Faculty of Computer and Information Sciences, Ain Shams University: 2 Sa3yda w 1 Menofy}
+\fancyhead[R]{\sffamily\footnotesize\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[L]{\sffamily\footnotesize Faculty of Computer and Information Sciences, Ain Shams University: 2 Sa3yda w 1 Menofy}%
+  \fancyhead[R]{\sffamily\footnotesize\thepage}%
+  \renewcommand{\headrulewidth}{0.3pt}%
+}
+
+%% ---- TOC styling ------------------------------------------------------------
+\renewcommand{\cftsecfont}{\sffamily\bfseries\fontsize{8pt}{9pt}\selectfont}
+\renewcommand{\cftsubsecfont}{\sffamily\fontsize{7.5pt}{8.5pt}\selectfont}
+\renewcommand{\cftsecpagefont}{\sffamily\bfseries\fontsize{8pt}{9pt}\selectfont}
+\renewcommand{\cftsubsecpagefont}{\sffamily\fontsize{7.5pt}{8.5pt}\selectfont}
+\setlength{\cftbeforesecskip}{1pt}
+\setlength{\cftbeforesubsecskip}{0pt}
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{0.8em}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+%% ============================================================================
+\begin{document}
+\begin{landscape}
+\begin{multicols}{2}
+
+\begin{center}
+  {\sffamily\Large\bfseries 2 Sa3yda w 1 Menofy}\\[3pt]
+  {\sffamily\normalsize\bfseries Competitive Programming Reference}\\[2pt]
+  {\sffamily\small 2025}
+\end{center}
+\vspace{4pt}
+
+\tableofcontents
+\vspace{2ex}
+
+
+% ============================================================================
+\section{Strategy \& Notes}
+% ============================================================================
+
+\subsection{Notes for Hard questions}
+\begin{itemize}
+    \item Try to brute force values
+    \item get the naive solution $\rightarrow$ so you can optimize it 
+    \item Stress Test
+    \item Test El PC in Practice
+    \item Think in reverse of the problem
+    \item solve the complement and total - cnt is your answer
+    \item if you need to count the ways and the mean is can be computed easier 
+    \item ways = expected * total
+    \item Solve range? try to solve(r) - solve(l - 1)
+\end{itemize}
+
+\subsection{Checks Before Submission}
+\begin{itemize}
+    \item Validate (you ask your teammate )
+    \item Time \& Memory
+    \item Corner Cases
+    \item Bounding Cases 
+    \item Read Clarifications
+    \item check for mod
+\end{itemize}
+
+% ============================================================================
+\section{Algebra Formulas}
+% ============================================================================
+
+If $a$ and $r$ are real numbers and $r \neq 0$, then
+
+$$\sum_{j=0}^{n} ar^j = \begin{cases} \frac{ar^{n+1}-a}{r-1} & \text{if } r \neq 1 \\ (n+1)a & \text{if } r = 1. \end{cases}$$
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ll}
+$\sum_{k=1}^{n} k$ & $\frac{n(n+1)}{2}$ \\
+$\sum_{k=1}^{n} k^2$ & $\frac{n(n+1)(2n+1)}{6}$ \\
+$\sum_{k=1}^{n} k^3$ & $\frac{n^2(n+1)^2}{4}$ \\
+$\sum_{k=0}^{\infty} x^k, \|x\| < 1$ & $\frac{1}{1-x}$ \\
+$\sum_{k=1}^{\infty} kx^{k-1}, \|x\| < 1$ & $\frac{1}{(1-x)^2}$ \\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+    \item \textbf{LCM * GCD} = the multiple of the 2 numbers
+    \item \textbf{LCM} = multiply the numbers which has the greatest power from the 2 numbers even if they're not common
+    \item \textbf{GCD} = multiply the numbers which has the lowest power from the 2 numbers even if they're not common
+    \item \textbf{Arithmetic sequence :} $\frac{n}{2}(a + b)$
+    \item \textbf{Geometric sequence :} $\frac{L*R-a}{r-1} = a * \frac{r^n-1}{r-1}$
+    \item \textbf{Sum of odd numbers :} $\left(\frac{n+n\%2}{2}\right)^2$
+    \item \textbf{Sum of even numbers:} $\frac{\left(\frac{n}{2}*(2+n-n\%2)\right)}{2}$
+    \item \textbf{Quadratic Formula :} $\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+\end{itemize}
+
+% ============================================================================
+\section{Main Template}
+% ============================================================================
+\lstinputlisting{main.cpp}
+
+% ============================================================================
+\section{FFT -- Templates}
+% ============================================================================
+
+\subsection{FFT (Complex Double)}
+\lstinputlisting{FFT/Templates/fft.cpp}
+
+\subsection{Mod FFT}
+\lstinputlisting{FFT/Templates/modfft.cpp}
+
+\subsection{NTT (mod = 998244353)}
+\lstinputlisting{FFT/Templates/ntt.cpp}
+
+\subsection{CRT (3-mod combination)}
+\lstinputlisting{FFT/Templates/crt.cpp}
+
+% ============================================================================
+\section{FFT -- Problems}
+% ============================================================================
+
+\subsection{A+B via FFT}
+\lstinputlisting{FFT/aplusb.cpp}
+
+\subsection{A-B Convolution}
+\lstinputlisting{FFT/aminusb.cpp}
+
+\subsection{Poly Shift}
+\lstinputlisting{FFT/polyShift.cpp}
+
+\subsection{Multi Polynomial Multiply}
+\lstinputlisting{FFT/MultiPolyMult.cpp}
+
+\subsection{Counting Distinct Array}
+\lstinputlisting{FFT/countingDistictArray.cpp}
+
+\subsection{Product Modulo}
+\lstinputlisting{FFT/productModulo.cpp}
+
+\subsection{String Matching}
+\lstinputlisting{FFT/stringMatching.cpp}
+
+\subsection{String Matching WildCard}
+\lstinputlisting{FFT/stringMatchingWildCard.cpp}
+
+\subsection{String Min Mismatch}
+\lstinputlisting{FFT/stringMinMismatch.cpp}
+
+\subsection{Fuzzy Search}
+\lstinputlisting{FFT/fuzzySearch.cpp}
+
+\subsection{Max Self Matching}
+\lstinputlisting{FFT/maxSelfMatching.cpp}
+
+% ============================================================================
+\section{Data Structures}
+% ============================================================================
+
+\subsection{BIT (Fenwick Tree)}
+\lstinputlisting{DS/Bit.cpp}
+
+\subsection{Template BIT}
+\lstinputlisting{DS/TemplateBIT.cpp}
+
+\subsection{2D BIT}
+\lstinputlisting{DS/2D_BIT.cpp}
+
+\subsection{Range BIT}
+\lstinputlisting{DS/RangeBit.cpp}
+
+\subsection{Segment Tree (lazy)}
+\lstinputlisting{DS/SegTree.cpp}
+
+\subsection{Iterative Segment Tree}
+\lstinputlisting{DS/iterativeSegment.cpp}
+
+\subsection{Max Subarray Sum Seg Tree}
+\lstinputlisting{DS/MaxSubarraySum.cpp}
+
+\subsection{Persistent Segment Tree}
+\lstinputlisting{DS/PST.cpp}
+
+\subsection{Sparse Table}
+\lstinputlisting{DS/Sparsetable.cpp}
+
+\subsection{2D Sparse Table}
+\lstinputlisting{DS/2D_Sparse.cpp}
+
+\subsection{Sqrt Decomposition}
+\lstinputlisting{DS/SqrtDecomp.cpp}
+
+\subsection{DSU}
+\lstinputlisting{DS/Dsu.cpp}
+
+\subsection{DSU with Rollback}
+\lstinputlisting{DS/DSUwithRollBack.cpp}
+
+\subsection{Mo's Algorithm}
+\lstinputlisting{DS/MO.cpp}
+
+\subsection{Mo on Hilbert Order}
+\lstinputlisting{DS/MohilbertOrder.cpp}
+
+\subsection{Monotonic Stack \& Queue}
+\lstinputlisting{DS/MonoQueueStack.cpp}
+
+\subsection{2-SAT}
+\lstinputlisting{DS/2Sat.cpp}
+
+\subsection{Wavelet Tree}
+\lstinputlisting{DS/WaveletTree.cpp}
+
+\subsection{Xor Basis}
+\lstinputlisting{DS/XorBasis.cpp}
+
+% ============================================================================
+\section{Graphs}
+% ============================================================================
+
+\subsection{Graph Template}
+\lstinputlisting{Graphs/graph.cpp}
+
+\subsection{Bellman-Ford}
+\lstinputlisting{Graphs/BellmanFord.cpp}
+
+\subsection{SPFA}
+\lstinputlisting{Graphs/SPFA.cpp}
+
+\subsection{MST (Kruskal)}
+\lstinputlisting{Graphs/MST.cpp}
+
+\subsection{Second Best MST}
+\lstinputlisting{Graphs/SecondBestMST.cpp}
+
+\subsection{LCA}
+\lstinputlisting{Graphs/LCA.cpp}
+
+\subsection{LCA with Sparse}
+\lstinputlisting{Graphs/LCAwithSparse.cpp}
+
+\subsection{Fast LCA}
+\lstinputlisting{Graphs/FastLCA.cpp}
+
+\subsection{HLD}
+\lstinputlisting{Graphs/HLD.cpp}
+
+\subsection{Centroid Decomposition}
+\lstinputlisting{Graphs/Centroid.cpp}
+
+\subsection{DSU on Tree (SACK)}
+\lstinputlisting{Graphs/SACK.cpp}
+
+\subsection{Dsu on Tree}
+\lstinputlisting{Graphs/DsuOnTree.cpp}
+
+\subsection{Knapsack on Tree}
+\lstinputlisting{Graphs/KnapsackOnTree.cpp}
+
+\subsection{Block Cut Tree}
+\lstinputlisting{Graphs/BlockCutTree.cpp}
+
+\subsection{Tarjan Articulation Points}
+\lstinputlisting{Graphs/TarjanArticulationPoint.cpp}
+
+\subsection{Tarjan Bridge Tree}
+\lstinputlisting{Graphs/TarjanBridgeTree.cpp}
+
+\subsection{Tarjan SCC}
+\lstinputlisting{Graphs/TarjanSCC.cpp}
+
+\subsection{Kosaraju}
+\lstinputlisting{Graphs/Kosaraju.cpp}
+
+\subsection{Check for Odd Cycle}
+\lstinputlisting{Graphs/CheckForOddCycle.cpp}
+
+\subsection{Finding Negative Cycle}
+\lstinputlisting{Graphs/FindingNegCycle.cpp}
+
+\subsection{Max Flow Dinic}
+\lstinputlisting{Graphs/mfDinic.cpp}
+
+\subsection{MCMF (Dijkstra)}
+\lstinputlisting{Graphs/mcmfDijkstra.cpp}
+
+\subsection{MCMF (SPFA)}
+\lstinputlisting{Graphs/mcmfSPFA.cpp}
+
+\subsection{Bipartite Matching}
+\lstinputlisting{Graphs/BiMatching.cpp}
+
+\subsection{Hopcroft-Karp}
+\lstinputlisting{Graphs/HopcroftKarp.cpp}
+
+\subsection{Hungarian Algorithm}
+\lstinputlisting{Graphs/Hugarian.cpp}
+
+% ============================================================================
+\section{Strings}
+% ============================================================================
+
+\subsection{KMP Prefix Function}
+\lstinputlisting{Strings/KmpPrefix.cpp}
+
+\subsection{KMP Automaton}
+\lstinputlisting{Strings/KmpAutomaton.cpp}
+
+\subsection{KMP Automaton 2}
+\lstinputlisting{Strings/KmpAutomaton2.cpp}
+
+\subsection{Z-Function}
+\lstinputlisting{Strings/Z.cpp}
+
+\subsection{Manacher}
+\lstinputlisting{Strings/Manacher.cpp}
+
+\subsection{Hashing}
+\lstinputlisting{Strings/Hash.cpp}
+
+\subsection{Shorter Hash}
+\lstinputlisting{Strings/ShorterHash.cpp}
+
+\subsection{Multiset Hash}
+\lstinputlisting{Strings/multisetHash.cpp}
+
+\subsection{Trie}
+\lstinputlisting{Strings/Trie.cpp}
+
+\subsection{Binary Trie}
+\lstinputlisting{Strings/BinaryTrie.cpp}
+
+\subsection{Aho-Corasick}
+\lstinputlisting{Strings/AhoCorasick.cpp}
+
+\subsection{Aho-Corasick Start/End}
+\lstinputlisting{Strings/AhoStartEnd.cpp}
+
+\subsection{Aho Matrix Trick}
+\lstinputlisting{Strings/AhoMatrixTrick.cpp}
+
+\subsection{Hard Hash LCA}
+\lstinputlisting{Strings/HardHashLCA.cpp}
+
+% ============================================================================
+\section{Math \& Geometry}
+% ============================================================================
+
+\subsection{Max Manhattan Distance}
+\begin{itemize}
+    \item For a set of points: $\max(| \max(u) - \min(u) |, | \max(v) - \min(v) |)$
+    \item Where $u = x + y$ and $v = x - y$
+\end{itemize}
+
+\subsection{Linear Sieve}
+\lstinputlisting{Math & Geometry/LinearSieve.cpp}
+
+\subsection{Miller-Rabin Primality}
+\lstinputlisting{Math & Geometry/millerRabin.cpp}
+
+\subsection{Phi \& Mobius Sieve}
+\lstinputlisting{Math & Geometry/phi_mobius.cpp}
+
+\subsection{Phi / Sqrt}
+\lstinputlisting{Math & Geometry/phiSqrt.cpp}
+
+\subsection{Extended Euclidean}
+\lstinputlisting{Math & Geometry/ExtendedEculdian.cpp}
+
+\subsection{Linear Diophantine}
+\lstinputlisting{Math & Geometry/LinearDiophantine.cpp}
+
+\subsection{Find All Diophantine Solutions}
+\lstinputlisting{Math & Geometry/FindAllSolutionLinearDiophantine.cpp}
+
+\subsection{GCD Trick}
+\lstinputlisting{Math & Geometry/GcdTrick.cpp}
+
+\subsection{Count Number of Divisors}
+\lstinputlisting{Math & Geometry/CountNumberOfDivisors.cpp}
+
+\subsection{Count Subarrays with LCM = q}
+\lstinputlisting{Math & Geometry/CountAllSubarraysWithlcmEqualq.cpp}
+
+\subsection{Counting (Combinations)}
+\lstinputlisting{Math & Geometry/Counting.cpp}
+
+\subsection{Matrix Power}
+\lstinputlisting{Math & Geometry/MatrixPow.cpp}
+
+\subsection{Big Integer}
+\lstinputlisting{Math & Geometry/BigInteger.cpp}
+
+\subsection{Solve Quadratics}
+\lstinputlisting{Math & Geometry/SolveQuads.cpp}
+
+\subsection{Convex Hull}
+\lstinputlisting{Math & Geometry/Convexhull.cpp}
+
+\subsection{Geometry}
+\lstinputlisting{Math & Geometry/Geometry.cpp}
+
+% ============================================================================
+\section{Dynamic Programming}
+% ============================================================================
+
+\subsection{LIS}
+\lstinputlisting{DP/LIS.cpp}
+
+\subsection{LIS with DS}
+\lstinputlisting{DP/LISwithDS.cpp}
+
+\subsection{Bitset DP}
+\lstinputlisting{DP/bitsetDP.cpp}
+
+\subsection{Digit DP}
+\lstinputlisting{DP/dpDigits.cpp}
+
+\subsection{Digit DP (Kero)}
+\lstinputlisting{DP/dpDigitsKero.cpp}
+
+\subsection{Count Distinct Subsequences}
+\lstinputlisting{DP/CountDistinctSubseq.cpp}
+
+\subsection{Largest Zero Submatrix}
+\lstinputlisting{DP/LargestZeroSubmatrix.cpp}
+
+\subsection{Number of Paths of Length K}
+\lstinputlisting{DP/NumberOfPathsOfLenK.cpp}
+
+\subsection{Sub-Rects with Unique Values}
+\lstinputlisting{DP/numberOfSubRecWithUniqueVal.cpp}
+
+% ============================================================================
+\section{Game Theory}
+% ============================================================================
+
+\subsection{Grundy (Sprague-Grundy)}
+\lstinputlisting{Game/Grundy.cpp}
+
+\subsection{Mex Set}
+\lstinputlisting{Game/MexSet.cpp}
+
+% ============================================================================
+\section{Miscellaneous}
+% ============================================================================
+
+\subsection{Baby Step Giant Step}
+\lstinputlisting{Random/BabyStep.cpp}
+
+\subsection{Catalan Numbers}
+\lstinputlisting{Random/Catalan.cpp}
+
+\subsection{Compress}
+\lstinputlisting{Random/Compress.cpp}
+
+\subsection{Math Operations on Strings}
+\lstinputlisting{Random/MathOperationOnStrings.cpp}
+
+\subsection{Ternary Search}
+\lstinputlisting{Random/TernarySearch.cpp}
+
+\subsection{2D Partial Sum}
+\lstinputlisting{Random/twoDPartialSum.cpp}
+
+\subsection{Stress Test}
+\lstinputlisting{stress_test.cpp}
+
+\end{multicols}
+\end{landscape}
+\end{document}

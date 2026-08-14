@@ -1,0 +1,123 @@
+\contentsline {section}{\numberline {1}Strategy \& Notes}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Notes for Hard questions}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Checks Before Submission}{2}{}%
+\contentsline {section}{\numberline {2}Algebra Formulas}{2}{}%
+\contentsline {section}{\numberline {3}Main Template}{3}{}%
+\contentsline {section}{\numberline {4}FFT -- Templates}{3}{}%
+\contentsline {subsection}{\numberline {4.1}FFT (Complex Double)}{3}{}%
+\contentsline {subsection}{\numberline {4.2}Mod FFT}{4}{}%
+\contentsline {subsection}{\numberline {4.3}NTT (mod = 998244353)}{4}{}%
+\contentsline {subsection}{\numberline {4.4}CRT (3-mod combination)}{5}{}%
+\contentsline {section}{\numberline {5}FFT -- Problems}{5}{}%
+\contentsline {subsection}{\numberline {5.1}A+B via FFT}{5}{}%
+\contentsline {subsection}{\numberline {5.2}A-B Convolution}{6}{}%
+\contentsline {subsection}{\numberline {5.3}Poly Shift}{6}{}%
+\contentsline {subsection}{\numberline {5.4}Multi Polynomial Multiply}{6}{}%
+\contentsline {subsection}{\numberline {5.5}Counting Distinct Array}{6}{}%
+\contentsline {subsection}{\numberline {5.6}Product Modulo}{6}{}%
+\contentsline {subsection}{\numberline {5.7}String Matching}{7}{}%
+\contentsline {subsection}{\numberline {5.8}String Matching WildCard}{7}{}%
+\contentsline {subsection}{\numberline {5.9}String Min Mismatch}{7}{}%
+\contentsline {subsection}{\numberline {5.10}Fuzzy Search}{8}{}%
+\contentsline {subsection}{\numberline {5.11}Max Self Matching}{8}{}%
+\contentsline {section}{\numberline {6}Data Structures}{8}{}%
+\contentsline {subsection}{\numberline {6.1}BIT (Fenwick Tree)}{8}{}%
+\contentsline {subsection}{\numberline {6.2}Template BIT}{8}{}%
+\contentsline {subsection}{\numberline {6.3}2D BIT}{9}{}%
+\contentsline {subsection}{\numberline {6.4}Range BIT}{9}{}%
+\contentsline {subsection}{\numberline {6.5}Segment Tree (lazy)}{10}{}%
+\contentsline {subsection}{\numberline {6.6}Iterative Segment Tree}{10}{}%
+\contentsline {subsection}{\numberline {6.7}Max Subarray Sum Seg Tree}{11}{}%
+\contentsline {subsection}{\numberline {6.8}Persistent Segment Tree}{12}{}%
+\contentsline {subsection}{\numberline {6.9}Sparse Table}{12}{}%
+\contentsline {subsection}{\numberline {6.10}2D Sparse Table}{13}{}%
+\contentsline {subsection}{\numberline {6.11}Sqrt Decomposition}{13}{}%
+\contentsline {subsection}{\numberline {6.12}DSU}{14}{}%
+\contentsline {subsection}{\numberline {6.13}DSU with Rollback}{14}{}%
+\contentsline {subsection}{\numberline {6.14}Mo's Algorithm}{15}{}%
+\contentsline {subsection}{\numberline {6.15}Mo on Hilbert Order}{15}{}%
+\contentsline {subsection}{\numberline {6.16}Monotonic Stack \& Queue}{15}{}%
+\contentsline {subsection}{\numberline {6.17}2-SAT}{16}{}%
+\contentsline {subsection}{\numberline {6.18}Wavelet Tree}{17}{}%
+\contentsline {subsection}{\numberline {6.19}Xor Basis}{18}{}%
+\contentsline {section}{\numberline {7}Graphs}{19}{}%
+\contentsline {subsection}{\numberline {7.1}Graph Template}{19}{}%
+\contentsline {subsection}{\numberline {7.2}Bellman-Ford}{20}{}%
+\contentsline {subsection}{\numberline {7.3}SPFA}{21}{}%
+\contentsline {subsection}{\numberline {7.4}MST (Kruskal)}{21}{}%
+\contentsline {subsection}{\numberline {7.5}Second Best MST}{21}{}%
+\contentsline {subsection}{\numberline {7.6}LCA}{21}{}%
+\contentsline {subsection}{\numberline {7.7}LCA with Sparse}{22}{}%
+\contentsline {subsection}{\numberline {7.8}Fast LCA}{22}{}%
+\contentsline {subsection}{\numberline {7.9}HLD}{22}{}%
+\contentsline {subsection}{\numberline {7.10}Centroid Decomposition}{23}{}%
+\contentsline {subsection}{\numberline {7.11}DSU on Tree (SACK)}{24}{}%
+\contentsline {subsection}{\numberline {7.12}Dsu on Tree}{24}{}%
+\contentsline {subsection}{\numberline {7.13}Knapsack on Tree}{24}{}%
+\contentsline {subsection}{\numberline {7.14}Block Cut Tree}{25}{}%
+\contentsline {subsection}{\numberline {7.15}Tarjan Articulation Points}{26}{}%
+\contentsline {subsection}{\numberline {7.16}Tarjan Bridge Tree}{26}{}%
+\contentsline {subsection}{\numberline {7.17}Tarjan SCC}{26}{}%
+\contentsline {subsection}{\numberline {7.18}Kosaraju}{27}{}%
+\contentsline {subsection}{\numberline {7.19}Check for Odd Cycle}{27}{}%
+\contentsline {subsection}{\numberline {7.20}Finding Negative Cycle}{27}{}%
+\contentsline {subsection}{\numberline {7.21}Max Flow Dinic}{28}{}%
+\contentsline {subsection}{\numberline {7.22}MCMF (Dijkstra)}{29}{}%
+\contentsline {subsection}{\numberline {7.23}MCMF (SPFA)}{30}{}%
+\contentsline {subsection}{\numberline {7.24}Bipartite Matching}{31}{}%
+\contentsline {subsection}{\numberline {7.25}Hopcroft-Karp}{32}{}%
+\contentsline {subsection}{\numberline {7.26}Hungarian Algorithm}{32}{}%
+\contentsline {section}{\numberline {8}Strings}{33}{}%
+\contentsline {subsection}{\numberline {8.1}KMP Prefix Function}{33}{}%
+\contentsline {subsection}{\numberline {8.2}KMP Automaton}{33}{}%
+\contentsline {subsection}{\numberline {8.3}KMP Automaton 2}{33}{}%
+\contentsline {subsection}{\numberline {8.4}Z-Function}{34}{}%
+\contentsline {subsection}{\numberline {8.5}Manacher}{34}{}%
+\contentsline {subsection}{\numberline {8.6}Hashing}{34}{}%
+\contentsline {subsection}{\numberline {8.7}Shorter Hash}{35}{}%
+\contentsline {subsection}{\numberline {8.8}Multiset Hash}{35}{}%
+\contentsline {subsection}{\numberline {8.9}Trie}{36}{}%
+\contentsline {subsection}{\numberline {8.10}Binary Trie}{36}{}%
+\contentsline {subsection}{\numberline {8.11}Aho-Corasick}{36}{}%
+\contentsline {subsection}{\numberline {8.12}Aho-Corasick Start/End}{39}{}%
+\contentsline {subsection}{\numberline {8.13}Aho Matrix Trick}{40}{}%
+\contentsline {subsection}{\numberline {8.14}Hard Hash LCA}{43}{}%
+\contentsline {section}{\numberline {9}Math \& Geometry}{46}{}%
+\contentsline {subsection}{\numberline {9.1}Max Manhattan Distance}{46}{}%
+\contentsline {subsection}{\numberline {9.2}Linear Sieve}{46}{}%
+\contentsline {subsection}{\numberline {9.3}Miller-Rabin Primality}{46}{}%
+\contentsline {subsection}{\numberline {9.4}Phi \& Mobius Sieve}{46}{}%
+\contentsline {subsection}{\numberline {9.5}Phi / Sqrt}{46}{}%
+\contentsline {subsection}{\numberline {9.6}Extended Euclidean}{47}{}%
+\contentsline {subsection}{\numberline {9.7}Linear Diophantine}{47}{}%
+\contentsline {subsection}{\numberline {9.8}Find All Diophantine Solutions}{47}{}%
+\contentsline {subsection}{\numberline {9.9}GCD Trick}{48}{}%
+\contentsline {subsection}{\numberline {9.10}Count Number of Divisors}{49}{}%
+\contentsline {subsection}{\numberline {9.11}Count Subarrays with LCM = q}{49}{}%
+\contentsline {subsection}{\numberline {9.12}Counting (Combinations)}{49}{}%
+\contentsline {subsection}{\numberline {9.13}Matrix Power}{50}{}%
+\contentsline {subsection}{\numberline {9.14}Big Integer}{50}{}%
+\contentsline {subsection}{\numberline {9.15}Solve Quadratics}{50}{}%
+\contentsline {subsection}{\numberline {9.16}Convex Hull}{51}{}%
+\contentsline {subsection}{\numberline {9.17}Geometry}{51}{}%
+\contentsline {section}{\numberline {10}Dynamic Programming}{54}{}%
+\contentsline {subsection}{\numberline {10.1}LIS}{54}{}%
+\contentsline {subsection}{\numberline {10.2}LIS with DS}{54}{}%
+\contentsline {subsection}{\numberline {10.3}Bitset DP}{54}{}%
+\contentsline {subsection}{\numberline {10.4}Digit DP}{54}{}%
+\contentsline {subsection}{\numberline {10.5}Digit DP (Kero)}{55}{}%
+\contentsline {subsection}{\numberline {10.6}Count Distinct Subsequences}{55}{}%
+\contentsline {subsection}{\numberline {10.7}Largest Zero Submatrix}{55}{}%
+\contentsline {subsection}{\numberline {10.8}Number of Paths of Length K}{56}{}%
+\contentsline {subsection}{\numberline {10.9}Sub-Rects with Unique Values}{56}{}%
+\contentsline {section}{\numberline {11}Game Theory}{57}{}%
+\contentsline {subsection}{\numberline {11.1}Grundy (Sprague-Grundy)}{57}{}%
+\contentsline {subsection}{\numberline {11.2}Mex Set}{57}{}%
+\contentsline {section}{\numberline {12}Miscellaneous}{57}{}%
+\contentsline {subsection}{\numberline {12.1}Baby Step Giant Step}{57}{}%
+\contentsline {subsection}{\numberline {12.2}Catalan Numbers}{57}{}%
+\contentsline {subsection}{\numberline {12.3}Compress}{58}{}%
+\contentsline {subsection}{\numberline {12.4}Math Operations on Strings}{58}{}%
+\contentsline {subsection}{\numberline {12.5}Ternary Search}{59}{}%
+\contentsline {subsection}{\numberline {12.6}2D Partial Sum}{59}{}%
+\contentsline {subsection}{\numberline {12.7}Stress Test}{59}{}%

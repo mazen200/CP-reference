@@ -1,0 +1,907 @@
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.4.23)  15 AUG 2026 02:06
+ restricted system commands enabled.
+**reference.tex
+(./reference.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
+luaotfload | conf : Root cache directory is "/home/kero/.texlive/texmf-var/luate
+x-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
+olved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2023-12-28.lu
+a".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.134
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "/home/kero/.texlive/texmf-var/luate
+x-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (/usr/share/texmf-dist/
+tex/latex/extsizes/extarticle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /home/kero/.texlive/texmf-var/
+luatex-cache/generic/names/luaotfload-names.luc.gz)
+(/usr/share/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2025/06/05 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen147
+)
+\c@part=\count273
+\c@section=\count274
+\c@subsection=\count275
+\c@subsubsection=\count276
+\c@paragraph=\count277
+\c@subparagraph=\count278
+\c@figure=\count279
+\c@table=\count280
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count281
+\Gm@cntv=\count282
+\c@Gm@tempcnt=\count283
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks18
+)
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PD
+F (HO)
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 106.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2025/09/29 v1.2f Graphics/color driver for luatex
+)))
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count284
+\mult@box=\box53
+\multicol@leftmargin=\dimen157
+\c@unbalance=\count285
+\c@collectmore=\count286
+\doublecol@number=\count287
+\multicoltolerance=\count288
+\multicolpretolerance=\count289
+\full@width=\dimen158
+\page@free=\dimen159
+\premulticols=\dimen160
+\postmulticols=\dimen161
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box54
+\last@line=\box55
+\mc@boxedresult=\box56
+\maxbalancingoverflow=\dimen162
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@firstbox=\box59
+\mult@gfirstbox=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\c@minrows=\count290
+\c@columnbadness=\count291
+\c@finalcolumnbadness=\count292
+\last@try=\dimen163
+\multicolovershoot=\dimen164
+\multicolundershoot=\dimen165
+\mult@nat@firstbox=\box97
+\colbreak@box=\box98
+\mc@col@check@num=\count293
+\g__mc_curr_col_int=\count294
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count295
+\lst@gtempboxa=\box99
+\lst@token=\toks19
+\lst@length=\count296
+\lst@currlwidth=\dimen166
+\lst@column=\count297
+\lst@pos=\count298
+\lst@lostspace=\dimen167
+\lst@width=\dimen168
+\lst@newlines=\count299
+\lst@lineno=\count300
+\lst@maxwidth=\dimen169
+
+(/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count301
+\lst@skipnumbers=\count302
+\lst@framebox=\box100
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box101
+\beforetitleunit=\skip53
+\aftertitleunit=\skip54
+\ttl@plus=\dimen170
+\ttl@minus=\dimen171
+\ttl@toksa=\toks20
+\titlewidth=\dimen172
+\titlewidthlast=\dimen173
+\titlewidthfirst=\dimen174
+)
+(/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count303
+))
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip55
+\f@nch@offset@elh=\skip56
+\f@nch@offset@erh=\skip57
+\f@nch@offset@olh=\skip58
+\f@nch@offset@orh=\skip59
+\f@nch@offset@elf=\skip60
+\f@nch@offset@erf=\skip61
+\f@nch@offset@olf=\skip62
+\f@nch@offset@orf=\skip63
+\f@nch@height=\skip64
+\f@nch@footalignment=\skip65
+\f@nch@widthL=\skip66
+\f@nch@widthC=\skip67
+\f@nch@widthR=\skip68
+\@temptokenb=\toks21
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip69
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen175
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen176
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count304
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count305
+\leftroot@=\count306
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count307
+\DOTSCASE@=\count308
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box102
+\strutbox@=\box103
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen177
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count309
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count310
+\dotsspace@=\muskip17
+\c@parentequation=\count311
+\dspbrk@lvl=\count312
+\tag@help=\toks23
+\row@=\count313
+\column@=\count314
+\maxfields@=\count315
+\andhelp@=\toks24
+\eqnshift@=\dimen178
+\alignsep@=\dimen179
+\tagshift@=\dimen180
+\tagwidth@=\dimen181
+\totwidth@=\dimen182
+\lineht@=\dimen183
+\@envbody=\toks25
+\multlinegap=\skip70
+\multlinetaggap=\skip71
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks27
+\MT@tempbox=\box104
+\MT@count=\count316
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks28
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen184
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count317
+
+(/usr/share/texmf-dist/tex/latex/microtype/microtype-luatex.def
+File: microtype-luatex.def 2026/03/01 v3.2d Definitions specific to luatex (RS)
+
+Lua module: microtype 2026/03/01 v3.2d microtype module.
+Module microtype Info: overwriting function `keepligature' on input line 63
+LaTeX Info: Redefining \lsstyle on input line 779.
+LaTeX Info: Redefining \lslig on input line 779.
+\MT@outer@space=\skip72
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen185
+\Gin@req@width=\dimen186
+)
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count318
+\rotFPtop=\skip73
+\rotFPbot=\skip74
+\rot@float@box=\box105
+\rot@mess@toks=\toks29
+)
+(/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip75
+\cftbeforetoctitleskip=\skip76
+\cftaftertoctitleskip=\skip77
+\cftbeforepartskip=\skip78
+\cftpartnumwidth=\skip79
+\cftpartindent=\skip80
+\cftbeforesecskip=\skip81
+\cftsecindent=\skip82
+\cftsecnumwidth=\skip83
+\cftbeforesubsecskip=\skip84
+\cftsubsecindent=\skip85
+\cftsubsecnumwidth=\skip86
+\cftbeforesubsubsecskip=\skip87
+\cftsubsubsecindent=\skip88
+\cftsubsubsecnumwidth=\skip89
+\cftbeforeparaskip=\skip90
+\cftparaindent=\skip91
+\cftparanumwidth=\skip92
+\cftbeforesubparaskip=\skip93
+\cftsubparaindent=\skip94
+\cftsubparanumwidth=\skip95
+\cftbeforeloftitleskip=\skip96
+\cftafterloftitleskip=\skip97
+\cftbeforefigskip=\skip98
+\cftfigindent=\skip99
+\cftfignumwidth=\skip100
+\c@lofdepth=\count319
+\c@lotdepth=\count320
+\cftbeforelottitleskip=\skip101
+\cftafterlottitleskip=\skip102
+\cftbeforetabskip=\skip103
+\cfttabindent=\skip104
+\cfttabnumwidth=\skip105
+
+
+Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing
+ out. on input line 1156.
+
+) (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2025-10-09 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count321
+Inserting `l3color' in `luaotfload.parse_color'.))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count322
+\l__fontspec_language_int=\count323
+\l__fontspec_strnum_int=\count324
+\l__fontspec_tmp_int=\count325
+\l__fontspec_tmpa_int=\count326
+\l__fontspec_tmpb_int=\count327
+\l__fontspec_tmpc_int=\count328
+\l__fontspec_em_int=\count329
+\l__fontspec_emdef_int=\count330
+\l__fontspec_strong_int=\count331
+\l__fontspec_strongdef_int=\count332
+\l__fontspec_tmpa_dim=\dimen187
+\l__fontspec_tmpb_dim=\dimen188
+\l__fontspec_tmpc_dim=\dimen189
+
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen190
+\ESO@tempdimb=\dimen191
+)
+luaotfload | cache : Lookup cache loaded from /home/kero/.texlive/texmf-var/luat
+ex-cache/generic/names/luaotfload-lookup-cache.luc.
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans Mono scale = 0.85.
+
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans Mono scale = 0.85.
+
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans Mono/B scale = 0.85.
+
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans Mono/I scale = 0.85.
+
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans Mono/BI scale = 0.85.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'DejaVuSansMono(0)' created for font
+(fontspec)             'DejaVu Sans Mono' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
+Space,Scale=0.85].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.85]"name:DejaVu Sans
+(fontspec)             Mono:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.85]"name:DejaVu
+(fontspec)             Sans Mono/B:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.85]"name:DejaVu Sans
+(fontspec)             Mono/I:mode=node;script=latn;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.85]"name:DejaVu Sans
+(fontspec)             Mono/BI:mode=node;script=latn;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans scale = 0.95.
+
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans scale = 0.95.
+
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans/B scale = 0.95.
+
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans/I scale = 0.95.
+
+
+Package fontspec Info: 
+(fontspec)             DejaVu Sans/BI scale = 0.95.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'DejaVuSans(0)' created for font 'DejaVu
+(fontspec)             Sans' with options [Ligatures=TeX,Scale=0.95].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.95]"name:DejaVu
+(fontspec)             Sans:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.95]"name:DejaVu
+(fontspec)             Sans/B:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.95]"name:DejaVu
+(fontspec)             Sans/I:mode=node;script=latn;language=dflt;+tlig;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.95]"name:DejaVu
+(fontspec)             Sans/BI:mode=node;script=latn;language=dflt;+tlig;"
+
+
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+) (./reference.aux)
+\openout1 = reference.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.90755pt, 539.69278pt, 28.90755pt)
+* v-part:(T,H,B)=(50.58878pt, 765.55052pt, 28.90755pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=539.69278pt
+* \textheight=765.55052pt
+* \oddsidemargin=-43.36244pt
+* \evensidemargin=-43.36244pt
+* \topmargin=-58.68121pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=14.22636pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count333
+\scratchdimen=\dimen192
+\scratchbox=\box106
+\nofMPsegments=\count334
+\nofMParguments=\count335
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count336
+\MPscratchDim=\dimen193
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
+\everyMPtoPDFconversion=\toks31
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count339
+LaTeX Info: Redefining \microtypecontext on input line 116.
+Package microtype Info: Applying patch `item' on input line 116.
+Package microtype Info: Applying patch `toc' on input line 116.
+Package microtype Info: Applying patch `eqnum' on input line 116.
+Package microtype Info: Applying patch `footnote' on input line 116.
+Package microtype Info: Applying patch `verbatim' on input line 116.
+LaTeX Info: Redefining \microtypesetup on input line 116.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+
+(/usr/share/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2026/02/26 v1.2 microtype config. file: Latin Mod
+ern Roman (RS)
+)
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 116.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 116.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 116.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 116.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 116.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 116.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 116.
+LaTeX Font Info:    Redeclaring math accent \check on input line 116.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 116.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 116.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 116.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 116.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 116.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 116.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 116.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 116.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 116.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 116.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 116.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 116.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/DejaVuSans(0)/m/n on input line 116
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/m/n on input line
+ 116.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 116.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 116.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/DejaVuSans(0)/b/n on input line 11
+6.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/b/n on input line
+ 116.
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 121.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `DejaVuSans' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
+(Font)              scaled to size 13.67995pt on input line 121.
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/b/n' will be
+(Font)              scaled to size 13.67995pt on input line 121.
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/b/n' will be
+(Font)              scaled to size 9.49997pt on input line 122.
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 123.
+
+(./reference.toc
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/b/n' will be
+(Font)              scaled to size 7.59998pt on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+(/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
+(Font)              scaled to size 7.12497pt on input line 2.
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
+(Font)              scaled to size 7.59998pt on input line 86.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+])
+\tf@toc=\write3
+
+\openout3 = reference.toc
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 132.
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 132.
+ [2]
+LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 191.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `DejaVuSansMono' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
+(Font)              scaled to size 6.37505pt on input line 191.
+ (./main.cpp
+LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/b/n' will be
+(Font)              scaled to size 6.37505pt on input line 12.
+) (./FFT/Templates/fft.cpp
+[3]) (./FFT/Templates/modfft.cpp) (./FFT/Templates/ntt.cpp [4])
+(./FFT/Templates/crt.cpp) (./FFT/aplusb.cpp) [5] (./FFT/aminusb.cpp)
+(./FFT/polyShift.cpp) (./FFT/MultiPolyMult.cpp) (./FFT/countingDistictArray.cpp
+) (./FFT/productModulo.cpp) [6] (./FFT/stringMatching.cpp)
+(./FFT/stringMatchingWildCard.cpp) (./FFT/stringMinMismatch.cpp [7])
+(./FFT/fuzzySearch.cpp) (./FFT/maxSelfMatching.cpp) (./DS/Bit.cpp)
+(./DS/TemplateBIT.cpp [8]) (./DS/2D_BIT.cpp) (./DS/RangeBit.cpp [9])
+(./DS/SegTree.cpp) (./DS/iterativeSegment.cpp [10]) (./DS/MaxSubarraySum.cpp
+[11]) (./DS/PST.cpp) (./DS/Sparsetable.cpp [12]) (./DS/2D_Sparse.cpp)
+(./DS/SqrtDecomp.cpp [13]) (./DS/Dsu.cpp) (./DS/DSUwithRollBack.cpp [14])
+(./DS/MO.cpp) (./DS/MohilbertOrder.cpp) (./DS/MonoQueueStack.cpp [15])
+(./DS/2Sat.cpp [16]) (./DS/WaveletTree.cpp [17]) (./DS/XorBasis.cpp [18])
+(./Graphs/graph.cpp [19]) (./Graphs/BellmanFord.cpp [20]) (./Graphs/SPFA.cpp)
+(./Graphs/MST.cpp) (./Graphs/SecondBestMST.cpp) (./Graphs/LCA.cpp [21])
+(./Graphs/LCAwithSparse.cpp) (./Graphs/FastLCA.cpp) (./Graphs/HLD.cpp [22])
+(./Graphs/Centroid.cpp [23]) (./Graphs/SACK.cpp) (./Graphs/DsuOnTree.cpp)
+(./Graphs/KnapsackOnTree.cpp [24]) (./Graphs/BlockCutTree.cpp)
+(./Graphs/TarjanArticulationPoint.cpp [25]) (./Graphs/TarjanBridgeTree.cpp)
+(./Graphs/TarjanSCC.cpp [26]) (./Graphs/Kosaraju.cpp)
+(./Graphs/CheckForOddCycle.cpp) (./Graphs/FindingNegCycle.cpp [27])
+(./Graphs/mfDinic.cpp [28]) (./Graphs/mcmfDijkstra.cpp [29])
+(./Graphs/mcmfSPFA.cpp [30]) (./Graphs/BiMatching.cpp) [31]
+(./Graphs/HopcroftKarp.cpp) (./Graphs/Hugarian.cpp [32])
+(./Strings/KmpPrefix.cpp) (./Strings/KmpAutomaton.cpp)
+(./Strings/KmpAutomaton2.cpp [33]) (./Strings/Z.cpp) (./Strings/Manacher.cpp)
+(./Strings/Hash.cpp [34]) (./Strings/ShorterHash.cpp)
+(./Strings/multisetHash.cpp [35]) (./Strings/Trie.cpp)
+(./Strings/BinaryTrie.cpp) (./Strings/AhoCorasick.cpp [36] [37]) [38]
+(./Strings/AhoStartEnd.cpp [39]) (./Strings/AhoMatrixTrick.cpp [40] [41]
+[42]) (./Strings/HardHashLCA.cpp [43] [44] [45])
+("./Math & Geometry/LinearSieve.cpp") ("./Math & Geometry/millerRabin.cpp")
+("./Math & Geometry/phi_mobius.cpp") ("./Math & Geometry/phiSqrt.cpp" [46])
+("./Math & Geometry/ExtendedEculdian.cpp")
+("./Math & Geometry/LinearDiophantine.cpp")
+("./Math & Geometry/FindAllSolutionLinearDiophantine.cpp" [47])
+("./Math & Geometry/GcdTrick.cpp") [48]
+("./Math & Geometry/CountNumberOfDivisors.cpp")
+("./Math & Geometry/CountAllSubarraysWithlcmEqualq.cpp")
+("./Math & Geometry/Counting.cpp" [49]) ("./Math & Geometry/MatrixPow.cpp")
+("./Math & Geometry/BigInteger.cpp") ("./Math & Geometry/SolveQuads.cpp")
+("./Math & Geometry/Convexhull.cpp" [50]) ("./Math & Geometry/Geometry.cpp"
+[51] [52] [53]) (./DP/LIS.cpp) (./DP/LISwithDS.cpp) (./DP/bitsetDP.cpp)
+(./DP/dpDigits.cpp [54]) (./DP/dpDigitsKero.cpp) (./DP/CountDistinctSubseq.cpp) (./DP/LargestZeroSubmatrix.cpp [55]) (./DP/NumberOfPathsOfLenK.cpp)
+(./DP/numberOfSubRecWithUniqueVal.cpp) (./Game/Grundy.cpp [56])
+(./Game/MexSet.cpp) (./Random/BabyStep.cpp) (./Random/Catalan.cpp [57])
+(./Random/Compress.cpp) (./Random/MathOperationOnStrings.cpp [58])
+(./Random/TernarySearch.cpp) (./Random/twoDPartialSum.cpp) (./stress_test.cpp)
+[59] (./reference.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+)
+
+Here is how much of LuaTeX's memory you used:
+ 14441 strings out of 476076
+ 2275725,953878 words of node,token memory allocated
+ 773 words of node memory still in use:
+   8 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
+rn, 4 glyph, 11 attribute, 92 glue_spec, 11 attribute_list, 2 write nodes
+   avail lists: 1:9,2:22232,3:710,4:3128,5:50506,6:428,7:134494,8:41,9:101128,10
+:89,11:5212
+ 36013 multiletter control sequences out of 65536+600000
+ 73 fonts using 28060719 bytes
+ 87i,13n,93p,1197b,1647s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono-Bold.ttf></us
+r/share/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono.ttf></usr/share/t
+exmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf-dist/f
+onts/opentype/public/lm/lmroman7-regular.otf></usr/share/texmf-dist/fonts/openty
+pe/public/lm/lmroman10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/
+lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-
+bold.otf></usr/share/texmf-dist/fonts/truetype/public/dejavu/DejaVuSans-Bold.ttf
+></usr/share/texmf-dist/fonts/truetype/public/dejavu/DejaVuSans.ttf></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on reference.pdf (59 pages, 467975 bytes).
+
+PDF statistics: 292 PDF objects out of 1000 (max. 8388607)
+ 192 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 1048576)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+
